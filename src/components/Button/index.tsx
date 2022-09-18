@@ -10,8 +10,8 @@ export const Button = ({
   size,
 }: ButtonProps) => {
   return (
-    <div>
+    <button className="bg-red-500 p-2">
       {label}
-    </div>
+    </button>
   )
 }
