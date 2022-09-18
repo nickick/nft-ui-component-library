@@ -1,6 +1,8 @@
 {
   "devDependencies": {
     "@babel/core": "^7.19.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
@@ -17,6 +19,10 @@
     "postcss-loader": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup": "^2.79.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.0",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.8.3"
   },
@@ -28,6 +34,8 @@
   "version": "0.1.0",
   "description": "UI component library for NFT React.js projects",
   "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/nickick/nft-ui-component-library",
   "author": "Nick Hong <contact@nickhong.xyz>",
   "license": "MIT",
@@ -35,6 +43,7 @@
   "dependencies": {},
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "rollup -c"
   }
 }
