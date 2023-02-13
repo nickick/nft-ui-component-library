@@ -1,11 +1,13 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+import { faker } from '@faker-js/faker';
 
 import Button from "./";
 
 describe("<Button />", () => {
   test("rendered text", () => {
-    render(<Button>sample component</Button>);
-    expect(screen.getByText("sample component")).toBeDefined();
+    const buttonLabel = faker.lorem.words();
+    render(<Button>{buttonLabel}</Button>);
+    expect(screen.getByText(buttonLabel)).toBeDefined();
   });
 });

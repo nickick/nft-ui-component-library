@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@babel/core": "^7.19.1",
+    "@faker-js/faker": "^7.6.0",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@storybook/addon-actions": "^6.5.16",
@@ -12,6 +13,8 @@
     "@storybook/manager-webpack4": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@swc/core": "^1.3.35",
+    "@swc/jest": "^0.2.24",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.4.0",
     "@types/react": "^18.0.20",
@@ -60,7 +63,9 @@
   },
   "jest": {
     "transform": {
-      ".(ts|tsx)": "ts-jest"
+      "^.+\\.(t|j)sx?$": [
+        "@swc/jest"
+      ]
     },
     "testEnvironment": "jsdom",
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
