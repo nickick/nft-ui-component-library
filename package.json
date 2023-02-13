@@ -3,14 +3,14 @@
     "@babel/core": "^7.19.1",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^14.1.0",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-interactions": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/builder-webpack4": "^6.5.12",
-    "@storybook/manager-webpack4": "^6.5.12",
-    "@storybook/react": "^6.5.12",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.20",
     "autoprefixer": "^10.4.11",
@@ -40,7 +40,10 @@
   "author": "Nick Hong <contact@nickhong.xyz>",
   "license": "MIT",
   "private": false,
-  "dependencies": {},
+  "dependencies": {
+    "ethers": "^5",
+    "wagmi": "^0.11.5"
+  },
   "files": [
     "/lib"
   ],
