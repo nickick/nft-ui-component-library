@@ -4,7 +4,7 @@ import ConnectButton from ".";
 
 export default {
   title: "Components/ConnectButton",
-  component: ConnectButton,
+  component: ConnectButton
 } as Meta;
 
 // Create a master template for mapping args to render the ConnectButton component
