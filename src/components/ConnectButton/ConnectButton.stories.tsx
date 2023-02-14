@@ -8,7 +8,7 @@ export default {
 } as Meta;
 
 // Create a master template for mapping args to render the ConnectButton component
-const Template: Story = (args) => <ConnectButton {...args} />;
+const Template: Story = () => <ConnectButton />;
 
 // Reuse that template for creating different stories
 export const Primary = Template.bind({});
