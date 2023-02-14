@@ -60,7 +60,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "prettier": "npx prettier -c ./"
   },
   "jest": {
     "transform": {
