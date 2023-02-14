@@ -1,11 +1,7 @@
-import Button from '../Button'
+import Button from "../Button";
 
 const ConnectButton = () => {
-  return (
-    <Button>
-      Test
-    </Button>
-  )
-}
+  return <Button>Test</Button>;
+};
 
-export default ConnectButton
+export default ConnectButton;
